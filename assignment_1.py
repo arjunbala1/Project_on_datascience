@@ -83,6 +83,7 @@ df3bin=pd.read_csv('BinSize.csv')
 hashkey='fb441e62df2d58994928907a91895ec62c2c42e6cd075c2700843b89'
 mask=(df3bin['hash']==hashkey)
 df3bin=df3bin.loc[mask]
+df_check=df_15
 
 del df3bin['GSNFLAG'],df3bin['HCNFLAG'],df3bin['WMOID'],df3bin['hash'],df3bin['x'],df3bin['y'],df3bin['x_group'],df3bin['y_group'],df3bin['STATE'],df3bin['ELEVATION'],df3bin['xy_group']
 
